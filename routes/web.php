@@ -17,6 +17,11 @@ use App\User;
     return view('layouts.layouts');
 });*/
 
+Route::get('/registe', function() {
+  return view('layouts');
+});
+
+
 Route::get('/', function () {
     return view('front');
 });

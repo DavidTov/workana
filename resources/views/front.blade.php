@@ -17,8 +17,6 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
         </a-->
         <span class="oi" data-glyph="puzzle-piece"></span>
-        <a class="d-inline p-2 bg-dark text-white" href="">Nuestra empresa</a>
-        <a class="d-inline p-2 bg-dark text-white" href="">Contactanos</a>
         <a class="d-inline p-2 bg-dark text-white" href="/login">Iniciar sesión</a>
         <a class="d-inline p-2 bg-dark text-white" href="/register">Registro</a>        
         <!--a class="d-inline p-2 bg-dark text-white" href="">Support</a>
@@ -29,11 +27,8 @@
     
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 font-weight-normal">Portal de Inglés</h1>
-        <p class="lead font-weight-normal">Lorem ipsum dolor sit amet consectetur adipiscing elit rutrum habitant hac neque,
-          risus inceptos sed vestibulum duis praesent faucibus massa mi nunc mattis, fames porta facilisis luctus interdum metus 
-          litora eget nec vitae. Quam arcu placerat dictumst tristique penatibus nulla donec, faucibus non blandit eget laoreet
-          malesuada auctor, tellus sed pharetra metus orci euismod. </p>
+        <h1 class="display-4 font-weight-normal">Bienvenido a nuestro Workana</h1>
+        <p class="lead font-weight-normal"> Aquí donde se puede</p>
         <a class="btn btn-outline-secondary" href="#">---</a>
       </div>
 <!--       <div class="product-device box-shadow d-none d-md-block"></div> -->
