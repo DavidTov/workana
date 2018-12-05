@@ -30,7 +30,7 @@ Author: SAEROX
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png"><!-- Imagen alado del tittle -->
-        <link rel="icon" type="image/png" sizes="16x16" href="imagenes/circulo-workana.jpg">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagenes/circulo-workana.png">
         <!-- Stylesheet -->
         <link rel="stylesheet" href="assets/vendors/css/base/bootstrap.min.css">
         <link rel="stylesheet" href="assets/vendors/css/base/elisyam-1.5.min.css">
@@ -126,7 +126,7 @@ Author: SAEROX
 
             <div class="page-content d-flex align-items-stretch">
                 <!-- SE INCLUYE LA NAVGACIÓN -->
-                @include('pages.menu')
+                @include('../pages.menu')                
            <?php    
                     // Se incluyen las vistas de navegación (menú)
                     //include 'Views/pages/navegacion1.php';
@@ -155,7 +155,7 @@ Author: SAEROX
                             
 
                          ?>
-
+                          @yield('contenido')
                         <br><br><br><br><br><br><br><br><br>
                         <br><br><br><br><br><br><br><br><br>
                         <br><br>
@@ -168,7 +168,7 @@ Author: SAEROX
                     <footer class="main-footer">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-center">
-                                <p class="text-gradient-02">Diseñado por Rodrigo Rojas, Mike Pérez, David Tovias</p>
+                                <p class="text-gradient-02">Diseñado por Rodrigo Rojas, Mike Pérez, David Tovias  &reg;</p>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-xl-end justify-content-lg-end justify-content-md-end justify-content-center">
                                 <ul class="nav">

@@ -13,122 +13,28 @@
 
 use App\User;
 
-/*Route::get('/', function () {
-    return view('layouts.layouts');
-});*/
-
+// Principal
 Route::get('/', function () {
     return view('inicio');
 });
 
-Route::get('/menu', function () {
-    return view('layout_menu');
-});
+// Como cliente
+
+Route::get('/perfilComoCliente', 'PagesController@perfilComoCliente');
+Route::get('/crearProyecto', 'PagesController@crearProyecto');
+Route::get('/freelancersContratados', 'PagesController@freelancersContratados');
+Route::get('/proyectosComoCliente', 'PagesController@proyectosComoCliente');
 
 
+// Como Freelance 
+
+Route::get('/buscarProyectos', 'PagesController@buscarTrabajo');  // ( Por defecto al iniciar sesión)
+Route::get('/perfilComoFeelance', 'PagesController@perfilComoFreelance');
+Route::get('/notificaciones', 'PagesController@notificaciones');
+Route::get('/proyectosComoFreelance', 'PagesController@proyectosComoFreelance');
 
 
-Route::get('/verificar', function () {
-    if (auth()->user()->rol == "1") {
-            return redirect('/Alumnos/' . auth()->user()->id);
-        }else
-    {
-            return redirect('/Administradores');
-    }
-});
+// Configuración y registro
+Route::get('/configuracion', 'PagesController@configuracion');
+Route::get('/menu', 'PagesController@menu');
 
-// Route::get('/Alumnos', function () {
-//     return view('Usuarios.alumno.inicio');
-// });
-
-Route::get('/Alumnos/Modulos', function () {
-    return view('Usuarios.alumno.modulos');
-});
-
-Route::get('/Alumnos/Modulos/Hablado', function () {
-    return view('Usuarios.alumno.Modulos.hablado');
-});
-
-Route::get('/Alumnos/Modulos/Hablado/{id}', function ($id) {
-    return view('Usuarios.alumno.Modulos.ActHablado');
-});
-
-Route::get('/Alumnos/Modulos/Escucha', function () {
-    return view('Usuarios.alumno.Modulos.escucha');
-});
-
-Route::get('/Alumnos/Modulos/Escucha/{id}', function ($id) {
-    return view('Usuarios.alumno.Modulos.ActEscucha');
-});
-
-/*Route::get('/Alumnos/Modulos/Gramatica', function () {
-    return view('Usuarios.alumno.Modulos.gramatica');
-});*/
-
-/*Route::get('/Alumnos/Modulos/Gramatica/{id}', function ($id) {
-    return view('Usuarios.alumno.Modulos.ActGramatica');
-});*/
-
-Route::get('/Alumnos/Modulos/Lectura', function () {
-    return view('Usuarios.alumno.Modulos.lectura');
-});
-
-Route::get('/Alumnos/Modulos/Lectura/{id}', function ($id) {
-    return view('Usuarios.alumno.Modulos.ActLectura');
-});
-
-Route::get('/Alumnos/Avance', function () {
-    return view('Usuarios.alumno.avance');
-});
-
-Route::get('/Alumnos/{id}', function ($id){
-    $user = User::find($id);
-    return view('Usuarios.alumno.perfil', compact('user'));
-});
-
-Route::get('/Prueba', function () {
-    return view('Usuarios.alumno.prueba');
-});
-//////////////////////////////////////////
-Route::get('/home', 'HomeController@index');
-
-Route::get('/Administradores', function () {
-    return view('Usuarios.administrador.inicio');
-});
-
-/*Route::get('/Administrador/Temas', function () {
-    return view('Usuarios.administrador.temas');
-});*/
-
-Route::post('/Administrador/Ejercicios/Agregar', 'administrador@AgregarEjercicio');
-
-Route::get('/Alumnos/Modulos/Gramatica/{id}', 'administrador@ActGramatica');
-Route::get('/Alumnos/Modulos/Gramatica', 'administrador@ModuloTemaGramatica');
-Route::get('/Alumnos/Modulos/Hablado', 'administrador@ModuloTemaHablado');
-Route::get('/Alumnos/Modulos/Lectura', 'administrador@ModuloTemaLectura');
-Route::get('/Alumnos/Modulos/Escucha', 'administrador@ModuloTemaEscucha');
-Route::get('/Administrador/Temas', 'administrador@temas');
-Route::post('/Administrador/Temas', 'administrador@temas');
-Route::post('/Administrador/Temas/Borrar/{id}', 'administrador@borrar');
-Route::post('/Administrador/Ejercicio/Borrar/{id}', 'administrador@borrarEjercicio');
-
-Route::get('/Alumnos/Modulos/GramaticaEjercicio/{id}', 'administrador@EjercicioInt');
-
-
-Route::get('/Administrador/Ejercicios', 'administrador@Ejercicios');
-
-Route::get('/Administrador/Usuarios', function () {
-    return view('Usuarios.administrador.usuarios');
-});
-
-///////////////////////////////////////
-
-Auth::routes();
-
-Route::post('/Administrador/Temas/Guardar', 'HomeController@GuardarTema');
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
