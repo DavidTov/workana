@@ -10,53 +10,41 @@
     <nav class="side-navbar box-scroll sidebar-scroll">
         <!-- Begin Main Navigation -->
         <ul class="list-unstyled">
-            <!-- DASHBOARD -->
-            <li class="active"> <a href="index.php?action=dashboard"><i class="la la-columns"></i><span>Dashboard</span></a> </li>
+            <!-- BUSCA TRABAJO -->
+            <li class="active"> <a href="#"><i class="la la-suitcase"></i><span>Busca trabajo</span></a> </li>
         </ul>
         
-        <ul class="list-unstyled"> <!-- USUARIOS -->
-              <li><a href="#dropdown-app" aria-expanded="false" data-toggle="collapse"><i class="la la-user"></i>Usuarios</a>
+        <ul class="list-unstyled"> <!-- MI PERFIL -->
+              <li><a href="#dropdown-app" aria-expanded="false" data-toggle="collapse"><i class="la la-user"></i>Mi perfil</a>
                 <ul id="dropdown-app" class="collapse list-unstyled pt-0">
-                    <li><a href="index.php?action=listaDeUsuarios">Lista de usuarios</a></li>
-                    <li><a href="index.php?action=agregarUsuario">Agregar usuario</a></li>
+                    <li><a href="">Como cliente</a></li>
+                    <li><a href="">Como freelance</a></li>
+                  <li><a href="">Configuración</a></li>
                 </ul>
             </li>
 
-            <!-- CUPONES -->
-            <li><a href="index.php?action=listaDeCupones" ><i class="la la-ticket"></i><i class="la la-car"></i>
-            <span>Cupones/Visitas</span></a>                
+            <!-- NOTIFICACIONES -->
+            <li><a href="" ><i class="la la-bell"></i>
+            <span>Notificaciones</span></a>
             </li>
 
-          
-              
-    <!-- EN CADA UNO DE LOS href="" pones href="index.php?action=agregar_premio" por ejemplo
-    agregar_premio va a ser un archivo .php (agregar_premio.php) QUE LO TENDRÁS QUE COLOCAR EN
-    LA CARPETE pages. Y EN EL modelo2 lo agregas en el primer if.
-    -->
 
-    <!-- PREMIOS -->
-        <li><a href="#dropdown-icons" aria-expanded="false" data-toggle="collapse"><i class="ti-gift"></i><span>Premios</span></a>
+    <!-- CONTRATA -->
+        <li><a href="#dropdown-icons" aria-expanded="false" data-toggle="collapse"><i class="la la-thumbs-o-up"></i><span>Contrata</span></a>
             <ul id="dropdown-icons" class="collapse list-unstyled pt-0">
-                <li><a href="index.php?action=verPremios"">Ver Premios</a></li>
-                <li><a href="index.php?action=registroPremios"">Registrar Premio</a></li>
+                <li><a href="">Crear proyecto</a> </li>
+                <li><a href="">Freelacers contratados(opcional)</a></li>
             </ul>
         </li>
 
-        <!-- PROMOCIONES -->
-        <li><a href="#dropdown-forms" aria-expanded="false" data-toggle="collapse"><i class="la la-flag-checkered"></i><span>Promociones</span></a>
+        <!-- MIS PROYECTOS -->
+        <li><a href="#dropdown-forms" aria-expanded="false" data-toggle="collapse"><i class="la la-github"></i><span>Mis proyectos</span></a>
             <ul id="dropdown-forms" class="collapse list-unstyled pt-0">
-                <li><a href="index.php?action=verPromociones">Ver Promociones</a></li>
-                <li><a href="index.php?action=registroPromociones">Registro Promociones</a></li>
+                <li><a href="">Como cliente</a></li>
+                <li><a href="">Como freelance</a></li>
             </ul>
         </li>
-       
-        <!-- HORARIOS -->
-        <li><a href="#dropdown-tables" aria-expanded="false" data-toggle="collapse"><i class="ion-clock"></i><span>Horarios</span></a>
-            <ul id="dropdown-tables" class="collapse list-unstyled pt-0">
-                <li><a href="index.php?action=verHorarios">Ver Horarios</a></li>
-                <li><a href="index.php?action=registroHorarios">Registrar Horario</a></li>
-            </ul>
-        </li>
+            
         
     </ul>
     <!--<span class="heading">Pages</span> -->
