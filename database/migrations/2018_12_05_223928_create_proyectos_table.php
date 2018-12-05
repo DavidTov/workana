@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTemasTable extends Migration
+class CreateProyectosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class CreateTemasTable extends Migration
      */
     public function up()
     {
-        Schema::create('temas', function (Blueprint $table) {
+        Schema::create('proyectos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre');
+            $table->unsignedInteger('id_usuario_cliente');
+            $table->unsignedInteger('id_categoria');
+            $table->string('titulo');   
             $table->text('descripcion');
-            $table->string('tipoModulo');
-            $table->integer('puntaje');
+            $table->unsignedInteger('monto'); // a pagar
+            $table->string('estado')->default('Publicado');
             $table->timestamps();
         });
     }
@@ -30,6 +32,6 @@ class CreateTemasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('temas');
+        Schema::dropIfExists('proyectos');
     }
 }

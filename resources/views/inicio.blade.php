@@ -21,17 +21,19 @@
         <!-- Stylesheet -->
         <link rel="stylesheet" href="assets/vendors/css/base/bootstrap.min.css">
         <link rel="stylesheet" href="assets/vendors/css/base/elisyam-1.5.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <title>Inicio</title>
   </head>
   <body>
     
-    <nav class="navbar navbar-white bg-white navbar-holder d-flex align-items-right align-right justify-content-between" >
-        <a class="p-4" href="/iniciar"><button class="btn btn-outline-info mr-1 mb-2">Iniciar sesión</button></a>
-        <a class="p-4" href="/registro"><button class="btn btn-outline-success mr-1 mb-2">Registro</button></a>        
+    <nav class="navbar navbar-white bg-white navbar-holder d-flex align-items-right align-right justify-content-between auto" >
+        <a class="p-3" href="/iniciar"><button class="btn btn-outline-primary mr-1 mb-2"><i class="fas fa-sign-in-alt"> Iniciar sesión</i></button></a>
+    <a class="p-3" href="/registro"><button class="btn btn-outline-success mr-1 mb-2"><i class="fas fa-list-ul"> Registro</i></button></a>        
     </nav>
     
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <img src="imagenes/circulo-workana.jpg" width="100px" height="100px">
         <h1 class="display-4 font-weight-normal">Bienvenido a nuestro Proyecto TAW</h1>
         <p class="lead font-weight-normal"> Donde puedes subir tus propios proyectos como freelancer y unirte a ellos como un cliente</p>
       </div>
