@@ -14,7 +14,7 @@ Author: SAEROX
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>DWASH - Autolavado</title>
+        <title>WORKANA > Sitio Freelance</title>
         <meta name="description" content="Elisyam is a Web App and Admin Dashboard Template built with Bootstrap 4">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Google Fonts -->
@@ -30,7 +30,7 @@ Author: SAEROX
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png"><!-- Imagen alado del tittle -->
-        <link rel="icon" type="image/png" sizes="16x16" href="imagenes/dwash.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagenes/circulo-workana.jpg">
         <!-- Stylesheet -->
         <link rel="stylesheet" href="assets/vendors/css/base/bootstrap.min.css">
         <link rel="stylesheet" href="assets/vendors/css/base/elisyam-1.5.min.css">
@@ -45,7 +45,7 @@ Author: SAEROX
         <!-- Begin Preloader -->
         <div id="preloader">
             <div class="canvas"> <!-- IMAGEN QUE APARECE AL CARGAR LA PÁGINA -->
-                <img src="imagenes/dwash.png" alt="logo" class="loader-logo">
+                <img src="imagenes/circulo-workana.jpg" alt="logo" class="loader-logo">
                 <div class="spinner"></div>   
             </div>
         </div>
@@ -68,10 +68,10 @@ Author: SAEROX
                         <div class="navbar-header"> <!-- IMAGEN EN LA PARTE SUPERIOR IZQ -->
                             <a href="db-default.html" class="navbar-brand">
                                 <div class="brand-image brand-big">
-                                    <img src="imagenes/dwash.png" alt="logo" class="logo-big" width="20px" height="80px">
+                                    <img src="imagenes/Logo-Workana.jpg" alt="logo" class="logo-big" width="20px" height="80px">
                                 </div> <!-- IMAGEN CUANDO SE ACHICA -->
                                 <div class="brand-image brand-small">
-                                    <img src="imagenes/dwash.png" alt="logo" class="logo-small">
+                                    <img src="imagenes/circulo-workana.jpg" alt="logo" class="logo-small">
                                 </div>
                             </a>
                             <!-- Toggle Button -->
@@ -168,15 +168,15 @@ Author: SAEROX
                     <footer class="main-footer">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-center">
-                                <p class="text-gradient-02">Diseñado por Alejandra Domínguez, David Tovias y Froylán Wbario</p>
+                                <p class="text-gradient-02">Diseñado por Rodrigo Rojas, Mike Pérez, David Tovias</p>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-xl-end justify-content-lg-end justify-content-md-end justify-content-center">
                                 <ul class="nav">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Práctica 14</a>
+                                        <a class="nav-link" href="#">Proyecto final</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">DWASH - Autolavado (Widescreen)</a>
+                                        <a class="nav-link" href="#"> Our version of Workana </a>
                                     </li>
                                 </ul>
                             </div>
