@@ -18,20 +18,21 @@ Route::get('/', function () {
     return view('inicio');
 });
 
+
+// Como Freelance 
+
+Route::get('/buscarProyectos', 'PagesController@buscarTrabajo');  // ( Por defecto al iniciar sesión)
+Route::get('/perfilComoFreelance', 'PagesController@perfilComoFreelance');
+Route::get('/notificaciones', 'PagesController@notificaciones');
+Route::get('/proyectosComoFreelance', 'PagesController@proyectosComoFreelance');
+
+
 // Como cliente
 
 Route::get('/perfilComoCliente', 'PagesController@perfilComoCliente');
 Route::get('/crearProyecto', 'PagesController@crearProyecto');
 Route::get('/freelancersContratados', 'PagesController@freelancersContratados');
 Route::get('/proyectosComoCliente', 'PagesController@proyectosComoCliente');
-
-
-// Como Freelance 
-
-Route::get('/buscarProyectos', 'PagesController@buscarTrabajo');  // ( Por defecto al iniciar sesión)
-Route::get('/perfilComoFeelance', 'PagesController@perfilComoFreelance');
-Route::get('/notificaciones', 'PagesController@notificaciones');
-Route::get('/proyectosComoFreelance', 'PagesController@proyectosComoFreelance');
 
 
 // Configuración y registro

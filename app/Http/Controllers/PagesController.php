@@ -17,7 +17,7 @@ class PagesController extends Controller
     }
     
     public function perfilComoFreelance(){
-      return view('pages.comoFreelance.perfil_freelance');
+      return view('pages.comoFreelance.perfilFreelance');
     }
   
     public function notificaciones(){
@@ -55,7 +55,7 @@ class PagesController extends Controller
     }
     
     public function menu(){
-      return view('pages.menu');
+      return view('layouts.layout_menu');
     }
   
     /*public function registro() {
