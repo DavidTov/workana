@@ -1,2 +1,0 @@
-@extends('Usuarios.alumno.home')
-

@@ -27,8 +27,7 @@ Author: SAEROX
           });
         </script>
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/circulo-workana.jpg">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">        
         <link rel="icon" type="image/png" sizes="16x16" href="imagenes/circulo-workana.jpg">
         <!-- Stylesheet -->
         <link rel="stylesheet" href="assets/vendors/css/base/bootstrap.min.css">
