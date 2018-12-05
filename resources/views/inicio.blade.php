@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+          WebFont.load({
+            google: {"families":["Montserrat:400,500,600,700","Noto+Sans:400,700"]},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+          });
+        </script>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="assets/vendors/css/base/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/vendors/css/base/elisyam-1.5.min.css">
     <title>Inicio</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <!--a class="py-2" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-        </a-->
-        <span class="oi" data-glyph="puzzle-piece"></span>
-        <a class="d-inline p-2 bg-dark text-white" href="/login">Iniciar sesión</a>
-        <a class="d-inline p-2 bg-dark text-white" href="/register">Registro</a>        
-        <!--a class="d-inline p-2 bg-dark text-white" href="">Support</a>
-        <a class="d-inline p-2 bg-dark text-white" href="">Pricing</a>
-        <a class="d-inline p-2 bg-dark text-white" href="">Cart</a-->
-      </div>
+    <nav class="navbar navbar-white bg-white">
+      
+        <a class="d-inline p-4 bg-white text-blue " href="/login">Iniciar sesión</a>
+        <a class="d-inline p-4 bg-white text-blue" href="/register">Registro</a>        
+      
     </nav>
     
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 font-weight-normal">Bienvenido a nuestro Workana</h1>
+        <h1 class="display-4 font-weight-normal">Bienvenido a nuestro Proyecto TAW</h1>
         <p class="lead font-weight-normal"> Aquí donde se puede</p>
-        <a class="btn btn-outline-secondary" href="#">---</a>
       </div>
 <!--       <div class="product-device box-shadow d-none d-md-block"></div> -->
 <!--       <div class="product-device product-device-2 box-shadow d-none d-md-block"></div> -->
@@ -87,8 +93,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <script src="assets/vendors/js/base/jquery.min.js"></script>
+        <script src="assets/vendors/js/base/core.min.js"></script>
+        <script src="assets/vendors/js/app/app.min.js"></script>
+   </body>
 </html>

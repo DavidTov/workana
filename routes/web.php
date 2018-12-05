@@ -17,14 +17,17 @@ use App\User;
     return view('layouts.layouts');
 });*/
 
-Route::get('/registe', function() {
-  return view('layouts');
-});
-
-
 Route::get('/', function () {
-    return view('front');
+    return view('inicio');
 });
+
+Route::get('/menu', function () {
+    return view('layout_menu');
+});
+
+
+
+
 Route::get('/verificar', function () {
     if (auth()->user()->rol == "1") {
             return redirect('/Alumnos/' . auth()->user()->id);
