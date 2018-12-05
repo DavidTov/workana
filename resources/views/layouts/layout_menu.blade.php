@@ -66,7 +66,7 @@ Author: SAEROX
                     <div class="navbar-holder d-flex align-items-center align-middle justify-content-between">
                         <!-- Begin Logo -->
                         <div class="navbar-header"> <!-- IMAGEN EN LA PARTE SUPERIOR IZQ -->
-                            <a href="db-default.html" class="navbar-brand">
+                            <a href="/buscarProyectos" class="navbar-brand">
                                 <div class="brand-image brand-big">
                                     <img src="imagenes/Logo-Workana.jpg" alt="logo" class="logo-big" width="20px" height="80px">
                                 </div> <!-- IMAGEN CUANDO SE ACHICA -->
