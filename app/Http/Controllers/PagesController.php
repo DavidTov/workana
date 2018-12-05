@@ -61,5 +61,8 @@ class PagesController extends Controller
     public function registro() {
       return view('pages.registro');
     }
+    public function iniciar() {
+      return view('pages.iniciar');
+    }
     
 }

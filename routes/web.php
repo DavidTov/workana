@@ -39,6 +39,7 @@ Route::get('/proyectosComoCliente', 'PagesController@proyectosComoCliente');
 Route::get('/configuracion', 'PagesController@configuracion');
 Route::get('/menu', 'PagesController@menu');
 Route::get('/registro', 'PagesController@registro');
+Route::get('/iniciar', 'PagesController@iniciar');
 
 
 
