@@ -28,8 +28,8 @@ Author: SAEROX
         </script>
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/dwash.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="imagenes/dwash.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/circulo-workana.jpg">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagenes/circulo-workana.jpg">
         <!-- Stylesheet -->
         <link rel="stylesheet" href="assets/vendors/css/base/bootstrap.min.css">
         <link rel="stylesheet" href="assets/vendors/css/base/elisyam-1.5.min.css">
@@ -41,7 +41,7 @@ Author: SAEROX
         <!-- Begin Preloader -->
         <div id="preloader">
             <div class="canvas"> <!-- Imagen que aparece al cargar la página -->
-                <img src="imagenes/dwash.png" alt="logo" class="loader-logo">
+                <img src="imagenes/circulo-workana.jpg" alt="logo" class="loader-logo">
                 <div class="spinner"></div>   
             </div>
         </div>

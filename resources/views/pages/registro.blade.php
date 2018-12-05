@@ -1,6 +1,6 @@
 <!-- FORM para el registro de una cuenta -->
 
-@extends('layout_registro')
+@extends('layouts.layout_registro')
   
 @section('registro')
   <div class="widget has-shadow">

@@ -58,8 +58,8 @@ class PagesController extends Controller
       return view('layouts.layout_menu');
     }
   
-    /*public function registro() {
+    public function registro() {
       return view('pages.registro');
-    }*/
+    }
     
 }

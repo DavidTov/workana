@@ -35,7 +35,10 @@ Route::get('/freelancersContratados', 'PagesController@freelancersContratados');
 Route::get('/proyectosComoCliente', 'PagesController@proyectosComoCliente');
 
 
-// Configuración y registro
+// Configuración, menu, registro e inicio
 Route::get('/configuracion', 'PagesController@configuracion');
 Route::get('/menu', 'PagesController@menu');
+Route::get('/registro', 'PagesController@registro');
+
+
 

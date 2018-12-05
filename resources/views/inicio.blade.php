@@ -28,7 +28,7 @@
     <nav class="navbar navbar-white bg-white">
       
         <a class="d-inline p-4 bg-white text-blue " href="/login">Iniciar sesión</a>
-        <a class="d-inline p-4 bg-white text-blue" href="/register">Registro</a>        
+        <a class="d-inline p-4 bg-white text-blue" href="/registro">Registro</a>        
       
     </nav>
     
