@@ -51,6 +51,7 @@
   <input type="submit" name="seleccionar" value="Enviar propuesta">
 </div>
 
+<br>
 
 
 @endsection

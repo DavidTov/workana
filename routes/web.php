@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('inicio');
 });
 
-
+//Route::resource();
 // Como Freelance 
 
 Route::get('/buscarProyectos', 'PagesController@buscarTrabajo');  // ( Por defecto al iniciar sesión)

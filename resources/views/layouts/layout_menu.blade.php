@@ -37,6 +37,12 @@ Author: SAEROX
         <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.min.css">
         <link rel="stylesheet" href="assets/css/datatables/datatables.min.css">
+      
+      <!-- Bulma CSS Framework 
+      <link rel="stylesheet" href="bulma-0.7.2/css/bulma.min.css">
+      <link rel="stylesheet" href="bulma-0.7.2/css/bulma.css">
+      -->
+      
         <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -155,6 +161,8 @@ Author: SAEROX
                             
 
                          ?>
+                          
+                      
                           @yield('contenido')
                         <br><br><br><br><br><br><br><br><br>
                         <br><br><br><br><br><br><br><br><br>

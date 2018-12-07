@@ -27,8 +27,8 @@
   <body>
     
     <nav class="navbar navbar-white bg-white navbar-holder d-flex align-items-right align-right justify-content-between auto" >
-        <a class="p-3" href="/iniciar"><button class="btn btn-outline-primary mr-1 mb-2"><i class="fas fa-sign-in-alt"> Iniciar sesión</i></button></a>
-    <a class="p-3" href="/registro"><button class="btn btn-outline-success mr-1 mb-2"><i class="fas fa-list-ul"> Registro</i></button></a>        
+        <a class="p-3" href="/iniciar"><button class="btn btn-primary mr-1 mb-2"><i class="fas fa-sign-in-alt"> Iniciar sesión</i></button></a>
+    <a class="p-3" href="/registro"><button class="btn btn-success mr-1 mb-2"><i class="fas fa-list-ul"> Registrar</i></button></a>        
     </nav>
     
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
