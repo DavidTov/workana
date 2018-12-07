@@ -6,7 +6,7 @@
 
   <!-- Perfil como Freelance -->
 
-  <h1>Configuración</h1> 
+  <h1>Editar Perfil</h1> 
                 
         <div class="page-body">
             <br>

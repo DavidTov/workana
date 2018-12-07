@@ -23,7 +23,8 @@
                 </ul>
             </li>
 
-            <!-- NOTIFICACIONES -->
+            
+           <!-- NOTIFICACIONES, Lista de propuestas aceptadas/rechazadas -->
             <li><a href="/notificaciones" ><i class="la la-bell"></i>
             <span>Notificaciones</span></a>
             </li>
@@ -33,7 +34,7 @@
         <li><a href="#dropdown-icons" aria-expanded="false" data-toggle="collapse"><i class="la la-thumbs-o-up"></i><span>Contrata</span></a>
             <ul id="dropdown-icons" class="collapse list-unstyled pt-0">
                 <li><a href="/crearProyecto">Crear proyecto</a> </li>
-                <li><a href="/freelancersContratados">Freelacers contratados(opcional)</a></li>
+                <li><a href="/freelancersContratados">Freelacers contratados(opcional)</a></li>                
             </ul>
         </li>
 

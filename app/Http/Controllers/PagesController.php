@@ -55,8 +55,12 @@ class PagesController extends Controller
       return view('pages.como_cliente.proyectos_como_cliente');
     }
   
+    public function verPropuestas(){
+      return view('pages.como_cliente.ver_propuestas');
+    }
   
-  // Configuración, menú y registro
+  
+  // Configuración, menú, registro y editar perfil
   
     public function configuracion(){
       return view('pages.configuracion');
@@ -69,8 +73,12 @@ class PagesController extends Controller
     public function registro() {
       return view('pages.registro');
     }
-    public function iniciar() {
-      return view('pages.iniciar');
+    public function iniciarSesion() {
+      return view('pages.login');
+    }
+  
+    public function editarPerfil(){
+      return view('pages.editarPerfil');
     }
     
 }

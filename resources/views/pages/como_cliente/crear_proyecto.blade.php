@@ -9,7 +9,7 @@
                 <div class="col-sm-12">
                     <div class="card">
                         <div class="card-header">
-                            <span>Favor de crear un proyecto</span>
+                            <span>Crea tu proyecto y contrata a un profesional!</span>
                         </div> 
                            <br>
                         <div class="card-block">
@@ -51,7 +51,8 @@
                                     <div class="col-sm-2"></div>
                                     <label class="col-sm-3 col-form-label">Descripción del proyecto</label>
                                     <div class="col-sm-6">
-                                        <input type="text" name="descripcion" class="form-control form-control-center form-control-round" placeholder="Escribe la descripción del proyecto"  required>
+                                        <textarea name="descripcion" class="form-control form-control-center form-control-round" placeholder="Escribe la descripción del proyecto"  required cols="30" rows="10"></textarea>
+                                       <!-- <input type="text" name="descripcion" class="form-control form-control-center form-control-round" placeholder="Escribe la descripción del proyecto"  required> -->
                                     </div>
                                 </div>
                                 

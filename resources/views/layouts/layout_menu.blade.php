@@ -214,6 +214,7 @@ Author: SAEROX
             <!-- End Page Content -->
         </div>
         <!-- Begin Success Modal -->
+  
         <div id="delay-modal" class="modal fade">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -231,6 +232,7 @@ Author: SAEROX
                 </div>
             </div>
         </div>
+
         <!-- End Success Modal -->
 
         <!-- Begin Modal -->
