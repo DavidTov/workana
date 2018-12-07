@@ -3,6 +3,9 @@
 @section('contenido')
 
 <h1>Buscar proyectos</h1>
+<div>
+  <a href="/proyectosConMisHabilidades"> <input type="submit" value="Proyectos con mis habilidades"> </a>
+</div>
 
 <div>
   <h4>Filtrar</h4>
@@ -48,7 +51,7 @@
   <label for="">Usuario</label>
   <br>
 
-  <input type="submit" name="seleccionar" value="Enviar propuesta">
+  <a href="/realizarPropuesta"> <input type="submit" name="seleccionar" value="Enviar propuesta"> </a>
 </div>
 
 <br>

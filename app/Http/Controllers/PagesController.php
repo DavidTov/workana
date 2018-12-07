@@ -28,6 +28,14 @@ class PagesController extends Controller
       return view('pages.comoFreelance.proyectosComoFreelance');
     }
   
+    public function proyectosConMisHabilidades(){
+      return view('pages.comoFreelance.proyectosConMisHabilidades');
+    }
+  
+    public function realizarPropuesta(){
+      return view('pages.comoFreelance.realizarPropuesta');
+    }
+  
   
   // Como cliente
     

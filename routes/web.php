@@ -18,13 +18,15 @@ Route::get('/', function () {
     return view('inicio');
 });
 
-//Route::resource();
+//Route::resource(); // comenté esto, marcaba error
 // Como Freelance 
 
 Route::get('/buscarProyectos', 'PagesController@buscarTrabajo');  // ( Por defecto al iniciar sesión)
 Route::get('/perfilComoFreelance', 'PagesController@perfilComoFreelance');
 Route::get('/notificaciones', 'PagesController@notificaciones');
 Route::get('/proyectosComoFreelance', 'PagesController@proyectosComoFreelance');
+Route::get('/proyectosConMisHabilidades', 'PagesController@proyectosConMisHabilidades');
+Route::get('/realizarPropuesta', 'PagesController@realizarPropuesta');
 
 
 // Como cliente
