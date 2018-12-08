@@ -17,11 +17,11 @@ class CreateUsuariosTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->string('email');
-            $table->string('pais');
+            $table->string('pais')->default('Mexico');
             $table->string('descripcion_corta')->nullable();
             $table->string('descripcion_sobreMi')->nullable();
             $table->string('imagen')->nullable();
-            $table->unsignedInteger('valor_hora')->nullable();
+            $table->unsignedInteger('valor_hora')->nullable(); // valor entero, ejemplo 90 ($90.00 MXN)
             $table->timestamps();
         });
     }

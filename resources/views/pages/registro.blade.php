@@ -39,26 +39,6 @@
                     </div>
                 </div>
 
-                <!-- PAIS -->
-                <div class="form-group row d-flex align-items-center mb-5">
-                    <label class="col-lg-4 form-control-label d-flex justify-content-lg-end">País</label>
-                    <div class="col-lg-5">
-                        <div class="input-group">
-                            <span class="input-group-addon addon-primary">
-                                <i class="la la-flag"></i>
-                            </span>
-                            <input type="text" class="form-control" placeholder="País" name="pais">
-                        </div>
-                    </div>
-                </div>
-               <!-- begin-->
-              
-              
-              
-              
-              
-              <!-- end-->
-
                 
                 <div class="text-center">
                     <button class="btn btn-gradient-02" type="submit" name="registro">Registrarse!</button>
