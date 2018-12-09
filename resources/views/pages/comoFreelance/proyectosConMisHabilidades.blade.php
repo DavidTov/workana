@@ -2,11 +2,11 @@
 
 @section('contenido')
 
-<h1>Proyectos con mis habilidades</h1>
+<h1>Proyectos con mis habilidades</h1> <br>
 <div>
-  <a href="/buscarProyectos"> <input type="submit" value="Todos los proyectos"> </a>
+  <a href="/buscarProyectos"> <button class="btn btn-success" type="submit" name=""> Todos los proyectos </button> </a> 
 </div>
-
+<br>
 <div>
   <h4>Habilidades</h4>
   <div>
@@ -16,27 +16,64 @@
 </div>
 
 <br>
+  
+      <div class="page-body">
+          <br>
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="card">
+                      <div class="card-header">
+                          <strong> Proyecto: - nombre proyecto - </strong>
+                      </div> 
+                         <br>
+                      <div class="card-block">
 
-<div>
-  <p>
-    <h3> Nombre del proyecto </h3>
-  </p>
-  <br>
-  <label for=""><h5>Plazo: </h5></label>
-  <br>
-  <label for=""><h5>Propuestas: </h5></label>
-  <br>
-  <label for=""><h5>Descripción: </h5></label>
-  <br>
-  <label for=""><h5>Categoria: </h5></label>
-  <br>
-  <label for=""><h5>Pago: </h5></label>
-  <br>
-  <label for="">Usuario</label>
-  <br>
 
-  <a href="/realizarPropuesta"> <input type="submit" name="seleccionar" value="Enviar propuesta"> </a>
-</div>
+                            <div class="form-group row">
+                                  <div class="col-sm-2"></div>
+                                  <label class="col-sm-3 col-form-label"> Plazo </label>                                    
+                              </div>
+
+                              <br>
+                            <div class="form-group row">
+                                  <div class="col-sm-2"></div>
+                                  <label class="col-sm-3 col-form-label"> Peopuestas </label>                                 
+                              </div>
+
+                              <br>
+                               <div class="form-group row">
+                                  <div class="col-sm-2"></div>
+                                  <label class="col-sm-3 col-form-label"> Descripción </label>                                    
+                              </div>
+
+                               <br>
+                               <div class="form-group row">
+                                  <div class="col-sm-2"></div>
+                                  <label class="col-sm-3 col-form-label"> Categoría:  </label>
+                              </div>
+
+                                <br>
+                               <div class="form-group row">
+                                  <div class="col-sm-2"></div>
+                                  <label class="col-sm-3 col-form-label"> Pago: $MXN  </label>
+                              </div>
+
+                               <br>
+                               <div class="form-group row">
+                                  <div class="col-sm-2"></div>
+                                  <label class="col-sm-3 col-form-label"> Usuario: nombre cliente </label>
+                              </div>
+                              <br>   
+                         <div class="form-group row">
+                                  <div class="col-sm-4"></div>
+                                  <a href="/realizarPropuesta"> <button class="btn btn-success" type="submit" name="registro"> Realizar propuesta </button> </a> 
+                              </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
 <br>
 

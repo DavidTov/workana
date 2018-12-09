@@ -1,8 +1,8 @@
 <!-- FORM para el LOGIN de una cuenta -->
 
-@extends('layouts.layout_registro')
+@extends('layouts.layout_sesion')
   
-@section('registro')
+@section('sesion')
   <div class="widget has-shadow">
         <div class="widget-header bordered no-actions d-flex align-items-center">
             <h4><strong> Iniciar Sesión </strong> </h4>
@@ -35,6 +35,9 @@
                 </div>
             </form>
         </div>
+    <a href="/"><button class="btn btn-danger mr-2 mb-2">
+        Regresar al Inicio
+      </button></a>
     </div>
     <!-- End Form -->
 

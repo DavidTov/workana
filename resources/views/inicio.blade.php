@@ -25,17 +25,23 @@
     <title>Inicio</title>
   </head>
   <body>
+    <div id="preloader">
+            <div class="canvas"> <!-- IMAGEN QUE APARECE AL CARGAR LA PÁGINA -->
+                <img src="imagenes/circulo-workana.jpg" alt="logo" class="loader-logo">
+                <div class="spinner"></div>   
+            </div>
+        </div>
     
     <nav class="navbar navbar-white bg-white navbar-holder d-flex align-items-right align-right justify-content-between auto" >
-        <a class="p-3" href="/iniciarSesion"><button class="btn btn-primary mr-1 mb-2"><i class="fas fa-sign-in-alt"> Iniciar sesión</i></button></a>
-    <a class="p-3" href="/registro"><button class="btn btn-success mr-1 mb-2"><i class="fas fa-list-ul"> Registrar</i></button></a>        
+        <a class="p-3" href="/iniciarSesion"><button class="btn btn-primary mr-2 mb-2"><i class="la la-user"> Iniciar sesión</i></button></a>
+    <a class="p-3" href="/registro"><button class="btn btn-success mr-2 mb-2"><i class="la la-pencil"> Registrar</i></button></a>        
     </nav>
     
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
         <img src="imagenes/circulo-workana.jpg" width="100px" height="100px">
         <h1 class="display-4 font-weight-normal">Bienvenido a nuestro Proyecto TAW</h1>
-        <p class="lead font-weight-normal"> Donde puedes subir tus propios proyectos como freelancer y unirte a ellos como un cliente</p>
+        <p class="lead font-weight-normal"> </p>
       </div>
 <!--       <div class="product-device box-shadow d-none d-md-block"></div> -->
 <!--       <div class="product-device product-device-2 box-shadow d-none d-md-block"></div> -->

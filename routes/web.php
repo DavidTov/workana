@@ -27,6 +27,7 @@ Route::get('/notificaciones', 'PagesController@notificaciones');
 Route::get('/proyectosComoFreelance', 'PagesController@proyectosComoFreelance');
 Route::get('/proyectosConMisHabilidades', 'PagesController@proyectosConMisHabilidades');
 Route::get('/realizarPropuesta', 'PagesController@realizarPropuesta');
+Route::get('/mejorarPropuesta', 'PagesController@mejorarPropuesta');
 
 
 // Como cliente

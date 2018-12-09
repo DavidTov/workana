@@ -46,6 +46,9 @@
                 </div>
             </form>
         </div>
+      <a href="/"><button class="btn btn-danger mr-2 mb-2">
+        Regresar al Inicio
+      </button></a>
     </div>
     <!-- End Form -->
 

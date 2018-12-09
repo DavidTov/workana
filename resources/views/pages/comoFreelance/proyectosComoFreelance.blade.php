@@ -53,7 +53,8 @@
                           <label for="">Si el estado es evaluando propuestas aparece, sino no aparece el botón</label>
                            <div class="form-group row">
                                     <div class="col-sm-4"></div>
-                                    <input type="submit" class="btn btn-gradient-01 col-sm-4" value="Mejorar propuesta">
+                              
+                             <a href="/mejorarPropuesta"> <button type="submit" class="btn btn-gradient-01"> Mejorar propuesta  </button></a>
                                 </div>
                             
                         </div>

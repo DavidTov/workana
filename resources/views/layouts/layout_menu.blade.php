@@ -29,7 +29,7 @@ Author: SAEROX
         </script>
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png"><!-- Imagen alado del tittle -->
+        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/circulo-workana.png"><!-- Imagen alado del tittle -->
         <link rel="icon" type="image/png" sizes="16x16" href="imagenes/circulo-workana.png">
         <!-- Stylesheet -->
         <link rel="stylesheet" href="assets/vendors/css/base/bootstrap.min.css">

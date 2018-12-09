@@ -36,6 +36,10 @@ class PagesController extends Controller
       return view('pages.comoFreelance.realizarPropuesta');
     }
   
+    public function mejorarPropuesta(){
+      return view('pages.comoFreelance.mejorarPropuesta');
+    }
+  
   
   // Como cliente
     
