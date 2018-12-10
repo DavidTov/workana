@@ -19,8 +19,9 @@
                            <br>
                         <div class="card-block">
                 <!-- FORMULARIO ACTUALIZAR DATOS -->
-                <form class="needs-validation" enctype="multipart/form-data">
-               
+        <form class="needs-validation" enctype="multipart/form-data" method="post" action="/editarPerfil/{{auth()->user()->id}}">
+            {{method_field('PATCH')}}
+               {{csrf_field()}}
                 <!-- NOMBRE COMPLETO -->
                 <div class="form-group row d-flex align-items-center mb-5">
                     <label class="col-lg-4 form-control-label d-flex justify-content-lg-end"> Imagen de perfil </label>
@@ -60,7 +61,7 @@
 
                 
                 <div class="text-center">
-                    <button class="btn btn-gradient-02" type="submit" name="actualizar">Actualizar perfil</button>                    
+                    <input type="submit" class="btn btn-gradient-02" value="Actualizar">
                 </div>
             </form>
                <!-- Fin formulario -->                                                

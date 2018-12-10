@@ -16,11 +16,11 @@ class CreateProyectosTable extends Migration
         Schema::create('proyectos', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('id_usuario_cliente');
-            $table->unsignedInteger('id_categoria');
+            $table->string('categoria');
             $table->string('titulo');   
             $table->text('descripcion');
             $table->unsignedInteger('monto'); // a pagar
-            $table->string('estado')->default('Publicado');
+            $table->string('estado')->default('Evaluando propuestas');
             $table->timestamps();
         });
     }

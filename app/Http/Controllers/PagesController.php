@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class PagesController extends Controller
 { 
     /* Funciones para retornar las vistas */
     
-  
+   
   // Como Freelance
-  
+    
     // Buscar proyectos
     public function buscarTrabajo(){
       return view('pages.comoFreelance.buscarProyectos');

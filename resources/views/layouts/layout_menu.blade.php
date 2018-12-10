@@ -98,18 +98,18 @@ Author: SAEROX
                             <h5>Usuario: {{auth()->user()->name}} <strong><?php /*/*echo $_SESSION["usuario"];*/ ?></strong></h5>
                             <li class="nav-item dropdown"><a id="user" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">
                                 <!-- IMAGEN DEL USUARIO-->
-                                <img src="fotosAdmin/<?php /*echo($_SESSION["foto"])*/ ?>" alt="..." class="avatar rounded-circle"></a>
+                                <img src="assets/img/avatar/user.png" alt="..." class="avatar rounded-circle"></a>
                                 <ul aria-labelledby="user" class="user-size dropdown-menu">
-                                    <li class="welcome">
-                                        <!-- Actualizar datos usuario en sesión -->
-                                        <a href="index.php?action=editarUsuario&id=<?php /*echo($_SESSION["admin_id"])*/ ?>" class="edit-profil"><i class="la la-gear" data-toggle="popover" data-placement="top" data-content="Pellentesque"></i></a> 
-                                        <!-- IMAGEN DEL USUARIO AL DESPLEGAR EL MENÚ -->
-                                        <img src="<?php /*echo "fotosAdmin/".$_SESSION["foto"];*/ ?>" alt="..." class="rounded-circle">   
-                                    </li>
+                                    <!--<li class="welcome">
+                                        <!-- Actualizar datos usuario en sesión 
+                                       <a href="index.php?action=editarUsuario&id= /*echo($_SESSION["admin_id"])*/ ?>" class="edit-profil"><i class="la la-gear" data-toggle="popover" data-placement="top" data-content="Pellentesque"></i></a> -->
+                                        <!-- IMAGEN DEL USUARIO AL DESPLEGAR EL MENÚ 
+                                    </li>-->
                                     <li>
-                                        <form method="POST">
+                                        <form method="POST" action="/logout">
+                                          {{csrf_field()}}
                                         <center><a href="#" class="dropdown-item"> 
-                                            <button name="cerrarSesion" class="btn btn-danger">Cerrar Sesión</button>                                            
+                                            <input type="submit" class="btn btn-danger" value="Cerrar Sesion">                                            
                                         </a></center>                                    
                                         </form>
                                     </li>                                 

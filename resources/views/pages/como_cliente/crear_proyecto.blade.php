@@ -13,10 +13,13 @@
                         </div> 
                            <br>
                         <div class="card-block">
-
-                            <!--Crea el formulario del formulario de agregar categoria mediante el metodo post-->
-                            <form method="post" enctype="multipart/form-data">  
+                  
+                            <!--Crea el formulario para crear proyecto metodo post-->
+                            <form method="POST" action="/crearProyecto/create">
+                              {{ csrf_field() }}
                                 
+                              <input type="hidden" name="id" value="{{auth()->user()->id}}">
+                                <!-- Se traen todas las categorias del controller de proyectos --> 
                                <div class="form-group row">
                                     <div class="col-sm-2"></div>
                                     <label class="col-sm-3 col-form-label">Categoria del proyecto</label>
@@ -24,15 +27,12 @@
                                         <div class="select">
                                                         <select name="categoria" class="custom-select form-control" required="">
                                                             <option value="">Selecciona una categoria</option>
-                                                            <option>option 1</option>
-                                                            <option>option 2</option>
-                                                            <option>option 3</option>
-                                                            <option>option 4</option>
-                                                            <option>option 5</option>
-                                                            <option>option 6</option>
+                                                            @foreach ($categorias as $categoria)
+                                                              <option> {{ $categoria->categoria }} </option>                                                            
+                                                            @endforeach
                                                         </select>
                                                         <div class="invalid-feedback">
-                                                            Please select an option
+                                                            Por favor elige una opcion
                                                         </div>
                                                     </div>
                                     </div>

@@ -14,10 +14,13 @@
                            <br>
                         <div class="card-block">
 
-                            <!--Crea el formulario del formulario de agregar categoria mediante el metodo post-->
-                            <form method="post" enctype="multipart/form-data">  
-                                
-                             
+                            <!--Crea el formulario de agregar propuesta mediante el metodo post -->
+                            <form method="POST" action="/realizarPropuesta/store">  
+                               {{ csrf_field() }}
+                              
+                             <input type="hidden" name="id_usuario" value="{{$id_usuario}}">
+                              
+                              <input type="hidden" name="id_proyecto" value="{{$id_proyecto}}">
                               <br>
                               <div class="form-group row">
                                     <div class="col-sm-2"></div>

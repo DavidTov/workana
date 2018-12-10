@@ -15,7 +15,13 @@
                 <div class="col-sm-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong> Nombre: - nombre completo - </strong>
+                          <p>
+                             <strong> Nombre: {{auth()->user()->name}} </strong>
+                          </p>
+                          <p>
+                             <strong> Correo: {{auth()->user()->email}} </strong>
+                          </p>
+                         
                         </div> 
                            <br>
                         <div class="card-block">
@@ -29,13 +35,14 @@
                                 <br>
                               <div class="form-group row">
                                     <div class="col-sm-2"></div>
-                                    <label class="col-sm-3 col-form-label">Breve descripción</label>                                 
+                                    <label class="col-sm-3 col-form-label">Breve descripción: {{auth()->user()->descripcion_corta}}</label> 
+                                    
                                 </div>
                                 
                                 <br>
                                  <div class="form-group row">
                                     <div class="col-sm-2"></div>
-                                    <label class="col-sm-3 col-form-label"> País: México </label>                                    
+                                    <label class="col-sm-3 col-form-label"> País: {{auth()->user()->pais}} </label>                                    
                                 </div>
                                 
                                  <br>
@@ -67,7 +74,10 @@
                         <div class="card-block">                           
                               <div class="form-group row">
                                     <div class="col-sm-2"></div>
-                                    <label class="col-sm-3 col-form-label"> Descripción sobre mí </label>                                    
+                                    <label class="col-sm-3 col-form-label"> Descripción sobre mí </label> 
+                                    <p>
+                                      {{auth()->user()->descripcion_sobreMi}}
+                                </p>
                                 </div>                                                                                     
                         </div>
                     </div>
