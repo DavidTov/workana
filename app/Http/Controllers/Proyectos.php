@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Categoria;
 use App\Proyecto;
+use App\Propuesta;
 
 class Proyectos extends Controller
 {
@@ -47,6 +48,13 @@ class Proyectos extends Controller
       
       return redirect('proyectosComoCliente');
     }
+  
+  public function proyectosUsuario(){
+    $propuestas = Propuesta::where('id_usuario_freelance',auth()->user()->id)->get();
+    $proyectos = Proyecto::all();
+    
+    return view('pages.comoFreelance.proyectosComoFreelance')->with('propuestas',$propuestas)->with('proyectos',$proyectos);
+  }
 }
 
 

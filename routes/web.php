@@ -28,8 +28,8 @@ Route::get('/inicio', function () {
 //Route::get('/buscarProyectos', 'PagesController@buscarTrabajo');  // (Por defecto al iniciar sesión)
 Route::get('/buscarProyectos', 'Proyectos@indexProyectos');  // (Por defecto al iniciar sesión)
 Route::get('/perfilComoFreelance', 'PagesController@perfilComoFreelance');
-Route::get('/notificaciones', 'PagesController@notificaciones');
-Route::get('/proyectosComoFreelance', 'PagesController@proyectosComoFreelance');
+Route::get('/notificaciones', 'PropuestaController@consultarPropuestas');
+Route::get('/proyectosComoFreelance', 'Proyectos@proyectosUsuario');
 Route::get('/proyectosConMisHabilidades', 'PagesController@proyectosConMisHabilidades');
 Route::get('/realizarPropuesta/{id_usuario}/{id_proyecto}', 'PropuestaController@fillForm'); // ir al form
 Route::post('/realizarPropuesta/store', 'PropuestaController@store'); // Guardar propuesta

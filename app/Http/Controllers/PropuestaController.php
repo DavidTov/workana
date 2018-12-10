@@ -28,4 +28,11 @@ class PropuestaController extends Controller
       
       return redirect('/proyectosComoFreelance');
     }
+  
+  public function consultarPropuestas(){
+    //$propuestas = Propuesta::all();
+    $propuestas = Propuesta::where('id_usuario_freelance',auth()->user()->id)->get();
+    //dd($propuestas);
+    return view('pages.comoFreelance.notificaciones', compact('propuestas'));
+  }
 }
