@@ -8,8 +8,8 @@
             <h4>Registrar cuenta </h4>
         </div>
         <div class="widget-body">
-            <form class="needs-validation" enctype="multipart/form-data">
-               
+            <form class="needs-validation" method="post" action="/registro">
+               {{csrf_field()}}
 
                 <!-- NOMBRE COMPLETO -->
                 <div class="form-group row d-flex align-items-center mb-5">
@@ -41,7 +41,7 @@
 
                 
                 <div class="text-center">
-                    <button class="btn btn-gradient-02" type="submit" name="registro">Registrarse!</button>
+                    <input type="submit" class="btn btn-gradient-02" value="Registrarse">
                     <button class="btn btn-shadow" type="reset">Borrar</button>
                 </div>
             </form>

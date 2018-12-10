@@ -95,7 +95,7 @@ Author: SAEROX
                             
                             <!-- End Notifications -->
                             <!-- User IMAGEN DEL USUARIO -->
-                            <h5>Usuario: <strong><?php /*/*echo $_SESSION["usuario"];*/ ?></strong></h5>
+                            <h5>Usuario: {{auth()->user()->name}} <strong><?php /*/*echo $_SESSION["usuario"];*/ ?></strong></h5>
                             <li class="nav-item dropdown"><a id="user" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">
                                 <!-- IMAGEN DEL USUARIO-->
                                 <img src="fotosAdmin/<?php /*echo($_SESSION["foto"])*/ ?>" alt="..." class="avatar rounded-circle"></a>

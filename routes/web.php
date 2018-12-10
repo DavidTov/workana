@@ -14,9 +14,11 @@
 use App\User;
 
 // Principal
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('inicio');
-});
+});*/
+
+Route::get('/', 'Auth\LoginController@showLoginForm');
 
 //Route::resource(); // comenté esto, marcaba error
 // Como Freelance 
@@ -45,6 +47,15 @@ Route::get('/menu', 'PagesController@menu');
 Route::get('/registro', 'PagesController@registro');
 Route::get('/iniciarSesion', 'PagesController@iniciarSesion');
 Route::get('/editarPerfil', 'PagesController@editarPerfil');
+
+//
+Route::post('/buscarProyectos','Auth\LoginController@login')->name('login');
+
+Route::post('/registro','UsuariosController@registrarUsuario');
+//Route::post('/registro','Auth\RegisterController@create');
+
+
+
 
 
 

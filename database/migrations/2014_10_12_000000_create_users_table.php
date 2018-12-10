@@ -19,6 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('pais')->default('Mexico')->nullable;
+            $table->string('descripcion_corta')->nullable();
+            $table->string('descripcion_sobreMi')->nullable();
+            $table->string('imagen')->nullable();
+            $table->unsignedInteger('valor_hora')->nullable(); // valor entero, ejemplo 90 ($90.00 MXN)
             $table->rememberToken();
             $table->timestamps();
             $table->string('rol')->default('1');

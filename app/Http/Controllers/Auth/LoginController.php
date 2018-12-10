@@ -2,48 +2,31 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Login Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles authenticating users for the application and
-    | redirecting them to your home screen. The controller uses a trait
-    | to conveniently provide its functionality to your applications.
-    |
-    */
-
-    use AuthenticatesUsers;
-
-    /**
-     * Where to redirect users after login.
-     *
-     * @var string
-     */
-    public $redirectTo = '/verificar';
-
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
   
-//     public function redirectPath()
-//     {
-//         if (auth()->user()->rol == "1") {
-//             //return 
-//             $redirectTo = '/Usuarios/alumno/layouts';
-//         }
-
-//         return '/Usuarios/alumno/inicio';
-//     }
+  public function __construct(){
+    $this->middleware('guest',['only'=>'showLoginForm']);
+  }
+  public function showLoginForm(){
+    return view('/buscarProyectos');
+  }
+  public function login(){
+    $credenciales=$this->validate(request(),[
+      'email'=>'email|required|string',
+      'password'=>'required|string'
+    ]);
+    //return $credenciales;
+    if(Auth::attempt($credenciales)){
+      return view('pages.comoFreelance.buscarProyectos');
+    }
+    return back()
+      ->withErrors(['email'=>trans('auth.failed')])
+      ->withInput(request(['email']));
+    //return view('pages.comoFreelance.buscarProyectos');
+  }
 }
